@@ -1,3 +1,4 @@
+data/IAM/*
 data/words*
 data/words.txt
 src/__pycache__/
