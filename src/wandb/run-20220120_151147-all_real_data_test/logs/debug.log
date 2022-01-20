@@ -1,0 +1,35 @@
+2022-01-20 15:11:47,947 INFO    MainThread:396819 [wandb_setup.py:_flush():71] setting env: {}
+2022-01-20 15:11:47,948 INFO    MainThread:396819 [wandb_setup.py:_flush():71] setting login settings: {}
+2022-01-20 15:11:47,948 INFO    MainThread:396819 [wandb_init.py:_log_setup():371] Logging user logs to /home/minhhieu/Desktop/Hieu/SimpleHTR/src/wandb/run-20220120_151147-all_real_data_test/logs/debug.log
+2022-01-20 15:11:47,948 INFO    MainThread:396819 [wandb_init.py:_log_setup():372] Logging internal logs to /home/minhhieu/Desktop/Hieu/SimpleHTR/src/wandb/run-20220120_151147-all_real_data_test/logs/debug-internal.log
+2022-01-20 15:11:47,949 INFO    MainThread:396819 [wandb_init.py:init():404] calling init triggers
+2022-01-20 15:11:47,949 INFO    MainThread:396819 [wandb_init.py:init():409] wandb.init called with sweep_config: {}
+config: {}
+2022-01-20 15:11:47,949 INFO    MainThread:396819 [wandb_init.py:init():460] starting backend
+2022-01-20 15:11:47,949 INFO    MainThread:396819 [backend.py:_multiprocessing_setup():99] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2022-01-20 15:11:47,960 INFO    MainThread:396819 [backend.py:ensure_launched():216] starting backend process...
+2022-01-20 15:11:47,963 INFO    MainThread:396819 [backend.py:ensure_launched():221] started backend process with pid: 396842
+2022-01-20 15:11:47,963 INFO    MainThread:396819 [wandb_init.py:init():469] backend started and connected
+2022-01-20 15:11:47,965 INFO    MainThread:396819 [wandb_init.py:init():533] updated telemetry
+2022-01-20 15:11:47,971 INFO    MainThread:396819 [wandb_init.py:init():563] communicating current version
+2022-01-20 15:11:48,575 INFO    MainThread:396819 [wandb_init.py:init():568] got version response 
+2022-01-20 15:11:48,576 INFO    MainThread:396819 [wandb_init.py:init():578] communicating run to backend with 30 second timeout
+2022-01-20 15:11:53,932 WARNING MainThread:396819 [wandb_init.py:init():952] interrupted
+Traceback (most recent call last):
+  File "/home/minhhieu/.local/lib/python3.8/site-packages/wandb/sdk/wandb_init.py", line 931, in init
+    run = wi.init()
+  File "/home/minhhieu/.local/lib/python3.8/site-packages/wandb/sdk/wandb_init.py", line 579, in init
+    ret = backend.interface.communicate_run(run, timeout=30)
+  File "/home/minhhieu/.local/lib/python3.8/site-packages/wandb/sdk/interface/interface.py", line 210, in communicate_run
+    return self._communicate_run(run, timeout=timeout)
+  File "/home/minhhieu/.local/lib/python3.8/site-packages/wandb/sdk/interface/interface_shared.py", line 311, in _communicate_run
+    resp = self._communicate(req, timeout=timeout)
+  File "/home/minhhieu/.local/lib/python3.8/site-packages/wandb/sdk/interface/interface_shared.py", line 213, in _communicate
+    return self._communicate_async(rec, local=local).get(timeout=timeout)
+  File "/home/minhhieu/.local/lib/python3.8/site-packages/wandb/sdk/interface/router.py", line 37, in get
+    is_set = self._object_ready.wait(timeout)
+  File "/usr/lib/python3.8/threading.py", line 558, in wait
+    signaled = self._cond.wait(timeout)
+  File "/usr/lib/python3.8/threading.py", line 306, in wait
+    gotit = waiter.acquire(True, timeout)
+KeyboardInterrupt

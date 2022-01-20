@@ -3,6 +3,7 @@ import json
 from typing import Tuple, List
 
 import cv2
+import wandb
 import editdistance
 from path import Path
 
@@ -60,6 +61,8 @@ def train(model: Model,
             batch = loader.get_next()
             batch = preprocessor.process_batch(batch)
             loss = model.train_batch(batch)
+            
+            wandb.log({'batch_wise_loss' : loss})
             print(f'Epoch: {epoch} Batch: {iter_info[0]}/{iter_info[1]} Loss: {loss}')
 
         # validate
@@ -115,6 +118,8 @@ def validate(model: Model, loader: DataLoaderIAM, line_mode: bool) -> Tuple[floa
     # print validation result
     char_error_rate = num_char_err / num_char_total
     word_accuracy = num_word_ok / num_word_total
+
+    wandb.log({'character_error_rate' : char_error_rate, 'word_accuracy' : word_accuracy})
     print(f'Character error rate: {char_error_rate * 100.0}%. Word accuracy: {word_accuracy * 100.0}%.')
     return char_error_rate, word_accuracy
 
@@ -146,7 +151,11 @@ def main():
     parser.add_argument('--img_file', help='Image used for inference.', type=Path, default='../data/word.png')
     parser.add_argument('--early_stopping', help='Early stopping epochs.', type=int, default=25)
     parser.add_argument('--dump', help='Dump output of NN to CSV file(s).', action='store_true')
+    parser.add_argument('--run_name', required=False, default=None, help='Specify run name for wandb project')
     args = parser.parse_args()
+
+    # Init wandb for log
+    wandb.init(project="simple-htr-with-diffusion-models", entity="hieubkvn123", id=args.run_name)
 
     # set chosen CTC decoder
     decoder_mapping = {'bestpath': DecoderType.BestPath,

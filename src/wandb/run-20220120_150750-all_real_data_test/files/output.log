@@ -1,0 +1,174 @@
+
+Ignoring known broken image: ../data/IAM/img/a01/a01-117/a01-117-05-02.png
+WARNING:tensorflow:From /home/minhhieu/Desktop/Hieu/SimpleHTR/src/model.py:73: batch_normalization (from tensorflow.python.keras.legacy_tf_layers.normalization) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.BatchNormalization instead.  In particular, `tf.control_dependencies(tf.GraphKeys.UPDATE_OPS)` should not be used (consult the `tf.keras.layers.BatchNormalization` documentation).
+WARNING:tensorflow:From /home/minhhieu/.local/lib/python3.8/site-packages/tensorflow/python/keras/legacy_tf_layers/normalization.py:336: Layer.apply (from tensorflow.python.keras.engine.base_layer_v1) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.__call__` method instead.
+2022-01-20 15:07:53.773485: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcuda.so.1
+2022-01-20 15:07:53.825930: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:982] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-01-20 15:07:53.826973: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 0 with properties:
+pciBusID: 0000:01:00.0 name: GeForce RTX 2080 Ti computeCapability: 7.5
+coreClock: 1.74GHz coreCount: 68 deviceMemorySize: 10.76GiB deviceMemoryBandwidth: 573.69GiB/s
+2022-01-20 15:07:53.827056: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.1
+2022-01-20 15:07:53.830426: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcublas.so.10
+2022-01-20 15:07:53.833381: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcufft.so.10
+2022-01-20 15:07:53.833994: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcurand.so.10
+2022-01-20 15:07:53.837423: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusolver.so.10
+2022-01-20 15:07:53.839452: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusparse.so.10
+2022-01-20 15:07:53.846868: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudnn.so.7
+2022-01-20 15:07:53.847081: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:982] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-01-20 15:07:53.848200: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:982] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-01-20 15:07:53.849173: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1858] Adding visible gpu devices: 0
+WARNING:tensorflow:From /home/minhhieu/Desktop/Hieu/SimpleHTR/src/model.py:86: LSTMCell.__init__ (from tensorflow.python.keras.layers.legacy_rnn.rnn_cell_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This class is equivalent as tf.keras.layers.LSTMCell, and will be replaced by that in Tensorflow 2.0.
+WARNING:tensorflow:From /home/minhhieu/Desktop/Hieu/SimpleHTR/src/model.py:90: MultiRNNCell.__init__ (from tensorflow.python.keras.layers.legacy_rnn.rnn_cell_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This class is equivalent as tf.keras.layers.StackedRNNCells, and will be replaced by that in Tensorflow 2.0.
+WARNING:tensorflow:From /home/minhhieu/Desktop/Hieu/SimpleHTR/src/model.py:94: bidirectional_dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.Bidirectional(keras.layers.RNN(cell))`, which is equivalent to this API
+WARNING:tensorflow:From /home/minhhieu/.local/lib/python3.8/site-packages/tensorflow/python/ops/rnn.py:438: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+WARNING:tensorflow:From /home/minhhieu/.local/lib/python3.8/site-packages/tensorflow/python/keras/layers/legacy_rnn/rnn_cell_impl.py:962: Layer.add_variable (from tensorflow.python.keras.engine.base_layer_v1) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.add_weight` method instead.
+WARNING:tensorflow:From /home/minhhieu/.local/lib/python3.8/site-packages/tensorflow/python/keras/layers/legacy_rnn/rnn_cell_impl.py:970: calling Zeros.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+2022-01-20 15:07:54.766454: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN)to use the following CPU instructions in performance-critical operations:  AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2022-01-20 15:07:54.789454: I tensorflow/core/platform/profile_utils/cpu_utils.cc:104] CPU Frequency: 3799900000 Hz
+2022-01-20 15:07:54.792165: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x7302090 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2022-01-20 15:07:54.792229: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2022-01-20 15:07:54.863093: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:982] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-01-20 15:07:54.863497: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x736dd30 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2022-01-20 15:07:54.863512: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): GeForce RTX 2080 Ti, Compute Capability 7.5
+2022-01-20 15:07:54.863652: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:982] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-01-20 15:07:54.863972: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 0 with properties:
+pciBusID: 0000:01:00.0 name: GeForce RTX 2080 Ti computeCapability: 7.5
+coreClock: 1.74GHz coreCount: 68 deviceMemorySize: 10.76GiB deviceMemoryBandwidth: 573.69GiB/s
+2022-01-20 15:07:54.864000: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.1
+2022-01-20 15:07:54.864016: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcublas.so.10
+2022-01-20 15:07:54.864027: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcufft.so.10
+2022-01-20 15:07:54.864037: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcurand.so.10
+2022-01-20 15:07:54.864048: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusolver.so.10
+2022-01-20 15:07:54.864059: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusparse.so.10
+2022-01-20 15:07:54.864071: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudnn.so.7
+2022-01-20 15:07:54.864109: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:982] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-01-20 15:07:54.864439: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:982] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-01-20 15:07:54.864735: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1858] Adding visible gpu devices: 0
+2022-01-20 15:07:54.864757: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.1
+2022-01-20 15:07:55.149221: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1257] Device interconnect StreamExecutor with strength 1 edge matrix:
+2022-01-20 15:07:55.149246: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1263]      0
+2022-01-20 15:07:55.149250: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1276] 0:   N
+2022-01-20 15:07:55.149483: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:982] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-01-20 15:07:55.149885: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:982] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-01-20 15:07:55.150280: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1402] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10036 MB memory) -> physical GPU (device: 0, name: GeForce RTX 2080 Ti, pci bus id: 0000:01:00.0, compute capability: 7.5)
+Ignoring known broken image: ../data/IAM/img/r06/r06-022/r06-022-03-05.png
+Python: 3.8.10 (default, Nov 26 2021, 20:14:08)
+[GCC 9.3.0]
+Tensorflow: 2.3.1
+Init with stored values from ../model/snapshot-19
+Epoch: 1
+Train NN
+2022-01-20 15:07:56.196905: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcublas.so.10
+2022-01-20 15:07:56.322169: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudnn.so.7
+Epoch: 1 Batch: 1/219 Loss: 1.9898808002471924
+Epoch: 1 Batch: 2/219 Loss: 2.0425126552581787
+Epoch: 1 Batch: 3/219 Loss: 1.4630497694015503
+Epoch: 1 Batch: 4/219 Loss: 1.7385481595993042
+Epoch: 1 Batch: 5/219 Loss: 1.8683743476867676
+Epoch: 1 Batch: 6/219 Loss: 1.791698932647705
+Epoch: 1 Batch: 7/219 Loss: 1.8634246587753296
+Epoch: 1 Batch: 8/219 Loss: 1.962132215499878
+Epoch: 1 Batch: 9/219 Loss: 1.9874153137207031
+Epoch: 1 Batch: 10/219 Loss: 1.7596509456634521
+Epoch: 1 Batch: 11/219 Loss: 1.3714426755905151
+Epoch: 1 Batch: 12/219 Loss: 2.005234479904175
+Epoch: 1 Batch: 13/219 Loss: 1.713439702987671
+Epoch: 1 Batch: 14/219 Loss: 1.7746890783309937
+Epoch: 1 Batch: 15/219 Loss: 1.6585865020751953
+Epoch: 1 Batch: 16/219 Loss: 1.8386338949203491
+Epoch: 1 Batch: 17/219 Loss: 1.6517279148101807
+Epoch: 1 Batch: 18/219 Loss: 1.735689640045166
+Epoch: 1 Batch: 19/219 Loss: 2.1200335025787354
+Epoch: 1 Batch: 20/219 Loss: 1.8721789121627808
+Epoch: 1 Batch: 21/219 Loss: 2.173734426498413
+Epoch: 1 Batch: 22/219 Loss: 1.809999704360962
+Epoch: 1 Batch: 23/219 Loss: 1.9507592916488647
+Epoch: 1 Batch: 24/219 Loss: 1.8042888641357422
+Epoch: 1 Batch: 25/219 Loss: 1.9578198194503784
+Epoch: 1 Batch: 26/219 Loss: 1.8921328783035278
+Epoch: 1 Batch: 27/219 Loss: 1.6535886526107788
+Epoch: 1 Batch: 28/219 Loss: 2.1979167461395264
+Epoch: 1 Batch: 29/219 Loss: 1.9304792881011963
+Epoch: 1 Batch: 30/219 Loss: 1.7499656677246094
+Epoch: 1 Batch: 31/219 Loss: 2.09918475151062
+Epoch: 1 Batch: 32/219 Loss: 1.6757481098175049
+Epoch: 1 Batch: 33/219 Loss: 1.6745233535766602
+Epoch: 1 Batch: 34/219 Loss: 1.6900641918182373
+Epoch: 1 Batch: 35/219 Loss: 1.9343425035476685
+Epoch: 1 Batch: 36/219 Loss: 2.023825168609619
+Epoch: 1 Batch: 37/219 Loss: 1.9477217197418213
+Epoch: 1 Batch: 38/219 Loss: 1.7668813467025757
+Epoch: 1 Batch: 39/219 Loss: 1.7114511728286743
+Epoch: 1 Batch: 40/219 Loss: 1.5849964618682861
+Epoch: 1 Batch: 41/219 Loss: 1.8095959424972534
+Epoch: 1 Batch: 42/219 Loss: 1.8447837829589844
+Epoch: 1 Batch: 43/219 Loss: 1.7759993076324463
+Epoch: 1 Batch: 44/219 Loss: 1.9344419240951538
+Epoch: 1 Batch: 45/219 Loss: 1.7131085395812988
+Epoch: 1 Batch: 46/219 Loss: 1.7814571857452393
+Epoch: 1 Batch: 47/219 Loss: 2.052628755569458
+Epoch: 1 Batch: 48/219 Loss: 1.9477506875991821
+Epoch: 1 Batch: 49/219 Loss: 2.1438663005828857
+Epoch: 1 Batch: 50/219 Loss: 1.8905411958694458
+Epoch: 1 Batch: 51/219 Loss: 2.096377372741699
+Epoch: 1 Batch: 52/219 Loss: 2.1146950721740723
+Epoch: 1 Batch: 53/219 Loss: 1.7215763330459595
+Epoch: 1 Batch: 54/219 Loss: 1.9045711755752563
+Epoch: 1 Batch: 55/219 Loss: 1.7106051445007324
+Epoch: 1 Batch: 56/219 Loss: 2.204158067703247
+Epoch: 1 Batch: 57/219 Loss: 1.8055323362350464
+Epoch: 1 Batch: 58/219 Loss: 1.8509961366653442
+Epoch: 1 Batch: 59/219 Loss: 1.6413285732269287
+Epoch: 1 Batch: 60/219 Loss: 1.9313522577285767
+Epoch: 1 Batch: 61/219 Loss: 1.8161386251449585
+Epoch: 1 Batch: 62/219 Loss: 2.0447325706481934
+Epoch: 1 Batch: 63/219 Loss: 2.0111098289489746
+Epoch: 1 Batch: 64/219 Loss: 1.66043221950531
+Epoch: 1 Batch: 65/219 Loss: 1.5389220714569092
+Epoch: 1 Batch: 66/219 Loss: 1.8105489015579224
+Epoch: 1 Batch: 67/219 Loss: 1.919110894203186
+Epoch: 1 Batch: 68/219 Loss: 1.8270217180252075
+Epoch: 1 Batch: 69/219 Loss: 1.6970467567443848
+Epoch: 1 Batch: 70/219 Loss: 2.0865488052368164
+Epoch: 1 Batch: 71/219 Loss: 1.7734466791152954
+Epoch: 1 Batch: 72/219 Loss: 1.8461012840270996
+Epoch: 1 Batch: 73/219 Loss: 2.173835277557373
+Epoch: 1 Batch: 74/219 Loss: 1.8739924430847168
+Epoch: 1 Batch: 75/219 Loss: 1.95706045627594
+Epoch: 1 Batch: 76/219 Loss: 2.096712350845337
+Epoch: 1 Batch: 77/219 Loss: 2.1210827827453613
+Epoch: 1 Batch: 78/219 Loss: 1.773427963256836
+Epoch: 1 Batch: 79/219 Loss: 1.8817787170410156
+Epoch: 1 Batch: 80/219 Loss: 1.9035340547561646
+Epoch: 1 Batch: 81/219 Loss: 1.8313722610473633
+Epoch: 1 Batch: 82/219 Loss: 1.7359285354614258
+Epoch: 1 Batch: 83/219 Loss: 2.0288639068603516
+Epoch: 1 Batch: 84/219 Loss: 2.2128336429595947
+Epoch: 1 Batch: 85/219 Loss: 2.0576820373535156
+Epoch: 1 Batch: 86/219 Loss: 1.7464852333068848
+Epoch: 1 Batch: 87/219 Loss: 2.03731632232666
+Epoch: 1 Batch: 88/219 Loss: 1.8239399194717407
+Epoch: 1 Batch: 89/219 Loss: 1.6965783834457397
+Epoch: 1 Batch: 90/219 Loss: 1.7755070924758911
+Epoch: 1 Batch: 91/219 Loss: 1.8013759851455688
+Epoch: 1 Batch: 92/219 Loss: 1.9111920595169067
+Epoch: 1 Batch: 93/219 Loss: 1.849188208580017
+Epoch: 1 Batch: 94/219 Loss: 1.9164987802505493
+Epoch: 1 Batch: 95/219 Loss: 2.065359115600586

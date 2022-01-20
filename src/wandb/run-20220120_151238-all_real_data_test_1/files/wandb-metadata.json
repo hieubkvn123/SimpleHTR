@@ -1,0 +1,35 @@
+{
+    "os": "Linux-5.11.0-43-generic-x86_64-with-glibc2.29",
+    "python": "3.8.10",
+    "heartbeatAt": "2022-01-20T08:12:40.913638",
+    "startedAt": "2022-01-20T08:12:38.998304",
+    "docker": null,
+    "gpu": "GeForce RTX 2080 Ti",
+    "gpu_count": 1,
+    "cpu_count": 16,
+    "cuda": null,
+    "args": [
+        "--mode",
+        "train",
+        "--data_dir",
+        "../data/IAM",
+        "--batch_size",
+        "500",
+        "--early_stopping",
+        "15",
+        "--run_name",
+        "all_real_data_test_1"
+    ],
+    "state": "running",
+    "program": "main.py",
+    "codePath": "src/main.py",
+    "git": {
+        "remote": "https://github.com/hieubkvn123/SimpleHTR.git",
+        "commit": "65307e04c1cc66947b784526c7722f4378dacbbf"
+    },
+    "email": "hieubkvn123@gmail.com",
+    "root": "/home/minhhieu/Desktop/Hieu/SimpleHTR",
+    "host": "minhhieu-Z490-GAMING-X",
+    "username": "minhhieu",
+    "executable": "/usr/bin/python3"
+}
