@@ -1,1 +1,1 @@
-{"batch_wise_loss": 6.253009796142578, "_runtime": 216, "_timestamp": 1642666575, "_step": 805, "character_error_rate": 0.567964404894327, "word_accuracy": 0.2244190079778009}
+{"batch_wise_loss": 0.5880738496780396, "_runtime": 4118, "_timestamp": 1642670477, "_step": 15619, "character_error_rate": 0.1132369299221357, "word_accuracy": 0.7275407561567812, "_wandb": {"runtime": 4119}}
